@@ -23,7 +23,6 @@ modules: [
 				client_id: 'XXXXX',
 				client_secret: 'XXXXXX',
 				vehicle_id: 'XXXXX',
-				google_api_key: 'XXXXX',
 				refreshInterval: 1000 * 60 * 10 // 60 minutes
 			}
 		}
@@ -79,14 +78,6 @@ The following properties can be configured:
 		<tr>
 			<td><code>vehicle_id</code></td>
 			<td>The vehicle_id can be found calling https://owner-api.teslamotors.com/api/1/vehicles with e.g. curl with an OAuth-token attached. Documentation <a href="https://timdorr.docs.apiary.io/#reference/vehicles/vehicle-collection/list-all-vehicles">here</a>. Or simply install the excellent <a href="https://github.com/hjespers/teslams">teslams command line client</a> and run <b>teslacmd vehicles</b>... and get the vehicle_id from there.
-			<td><br>
-				<br><b>Example:</b> <code>abc</code>
-				<br> This value is <b>REQUIRED</b>
-			</td>
-		</tr>
-		<tr>
-			<td><code>google_api_key</code></td>
-			<td>You will need a Google API key, can be generated <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">here</a>.
 			<td><br>
 				<br><b>Example:</b> <code>abc</code>
 				<br> This value is <b>REQUIRED</b>
